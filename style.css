@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* 
+
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+ 
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  color: #FFBF00;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: white;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.intro > p {
+    height: auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.beginnings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.beginnings > p {
+    max-width: 600px;
+    width: 100%;
+}
+
+.career {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+    
+}
+.career > img {
+    width: 600px;
+    height: auto;
+}
+.career > p{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+}
+
+.works-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.title p {
+    font-size: 15px;
+}
+.title > img {
+    height: 300px;
+    width: 200px;
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.quote p {
+    width: 400px;
+}
+.quote img {
+    width: 300px;
+    height: auto;
+}
+
+
+
+/* media query */
+
+@media (max-width: 768px) {
+    .intro, .beginnings, .career {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .works-container {
+        flex-wrap: wrap;
+    }
+    .title img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+    p {
+        font-size: 18px;
+    }
+}
